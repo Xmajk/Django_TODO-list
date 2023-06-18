@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-*)bn!!m5)huq6bwl2w7axz5(yl-ni1jr7_)qxe(go#pmeoryi%
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["*"]
 
 # Application definition
 
@@ -148,3 +148,8 @@ STATICFILES_DIRS = [
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 DATETIME_INPUT_FORMATS = '%Y-%m-%d %H:%M:%S'
+
+AUTHENTICATION_BACKENDS = [
+    'django.contrib.auth.backends.ModelBackend',
+    # Další autentikační metody, pokud jsou použity
+]
