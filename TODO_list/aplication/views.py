@@ -99,3 +99,8 @@ def login_page(request,error=None):
 def logout_path(request):
     logout(request)
     return redirect("login")
+
+def control_page(request):
+    return render(request,"control.html",{
+        "users":User.objects.filter()
+    })
