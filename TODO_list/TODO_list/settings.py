@@ -90,7 +90,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.mysql',  
         'NAME': 'django_todo_database',  
         'USER': 'root',  
-        'PASSWORD': 'NezukoKamado1',  
+        'PASSWORD': 'heslo',  
         'HOST': '127.0.0.1',  
         'PORT': '3306',  
         'OPTIONS': {  
